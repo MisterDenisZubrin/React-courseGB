@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-size: 16px;
-  background-color: blue;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .container {
   margin: 0 auto;
@@ -9,13 +9,74 @@ body {
   width: 100%;
 }
 
-.text {
-  margin: 0;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 18px;
-  color: white;
-  min-height: 300px;
-  padding: 16px;
+.messenger {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 400px;
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+
+  &__textarea {
+    width: 330px;
+    height: 80px;
+    resize: none;
+    outline: none;
+    font-size: 16px;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid rgb(168, 159, 228);
+    
+  }
+
+  &__button {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 15px 0 0 20px;
+    border: .5px solid green;
+    font-size: 25px;
+    color: green;
+    background-color: #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    &:hover,
+    &:active {
+      background-color: green;
+      color: white;
+    }
+  }
+}
+
+.list {
+  list-style-type: none;
+  width: 100%;
+  height: 500px;
+  border: .5px solid orange;
+  padding: 10px;
   box-sizing: border-box;
-  white-space: pre-line;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-family: Verdana, Tahoma, sans-serif;
+  margin: 0 0 8px 0;
+
+  &__author {
+    display: block;
+    margin: 0 10px 0 0;
+  }
+
+  &__text {
+    margin: 0;
+    word-break: break-all;
+  }
+
+
 }

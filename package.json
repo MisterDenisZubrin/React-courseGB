@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "name": "react-project",
   "version": "0.1.0",
   "private": true,
@@ -38,16 +37,4 @@
       "last 1 safari version"
     ]
   }
-=======
-  "name": "react-course",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
->>>>>>> 6b7c09a57fdcff3490bb0e6c30f4743f6fb62368
 }

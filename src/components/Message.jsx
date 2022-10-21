@@ -1,6 +1,9 @@
 function Message(props) {
   return (
-    <p className='text'>{props.text}</p>
+    <li className="message">
+      <span className='message__author'>{props.message.author}</span>
+      <p className='message__text'>{props.message.text}</p>
+    </li>
   );
 }
 
