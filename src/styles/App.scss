@@ -3,18 +3,39 @@ body {
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .container {
   margin: 0 auto;
   max-width: 1200px;
   width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
 .messenger {
   display: flex;
-  flex-wrap: wrap;
-  max-width: 400px;
-  width: 100%;
+  max-width: 500px;
+  width: calc(100% - 80px);
+
+  &__current-chat {
+    width: 100%;
+  }
+
+  &__chats {
+    max-width: 80px;
+    width: 100%;
+    outline: 1px dotted gray;
+  }
+
+  &__messages-list {
+    min-height: 400px;
+    border: .5px solid orange;
+    box-sizing: border-box;
+  }
+
 }
+
+// Удалить после полного перехода на новую верстку
 
 .form {
   display: flex;
@@ -29,7 +50,6 @@ body {
     padding: 8px;
     box-sizing: border-box;
     border: 1px solid rgb(168, 159, 228);
-    
   }
 
   &__button {
@@ -61,12 +81,14 @@ body {
   box-sizing: border-box;
 }
 
+// Вынести в отдельные стили для компонента Message
+
 .message {
   display: flex;
   align-items: center;
   font-size: 16px;
   font-family: Verdana, Tahoma, sans-serif;
-  margin: 0 0 8px 0;
+  margin: 0 0 8px 10px;
 
   &__author {
     display: block;
@@ -77,6 +99,4 @@ body {
     margin: 0;
     word-break: break-all;
   }
-
-
 }
