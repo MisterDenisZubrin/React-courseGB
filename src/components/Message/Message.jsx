@@ -1,3 +1,5 @@
+import './Message.scss';
+
 function Message(props) {
   return (
     <li className="message">
